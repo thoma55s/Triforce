@@ -5,6 +5,11 @@
     "markingMode": "none"
   },
   "dependencies": {
+    "@angular/cli": "^8.3.19",
     "@types/mocha": "^5.2.7"
+  },
+  "devDependencies": {
+    "@nativescript/schematics": "^0.7.3",
+    "@schematics/angular": "^8.3.19"
   }
 }

@@ -3,10 +3,12 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
 import { PlantPageComponent } from "./plant-page/plant-page.component";
+import { MenuPageComponent } from "./menu-page/menu-page.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/main", pathMatch: "full" },
-    { path: "main", component: PlantPageComponent },
+    { path: "main", component: MenuPageComponent },
+    { path: "plants", component: PlantPageComponent}
 
 ];
 
