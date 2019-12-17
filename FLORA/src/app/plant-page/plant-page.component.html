@@ -1,7 +1,7 @@
 <ListView [items]="plants" separatorColor="transparent">
     <ng-template let-item="item">
         <StackLayout class="image-content-container">
-            <Image [src]="item.ImageUrl"></Image>
+            <Image [src]="item.ImageUrl" [nsRouterLink]="['/plantdetail']"></Image>
             <Label [text]="item.Name" textTransform="uppercase" class="text-center"></Label>
         </StackLayout>
     </ng-template>
