@@ -4,11 +4,13 @@ import { Routes } from "@angular/router";
 
 import { PlantPageComponent } from "./plant-page/plant-page.component";
 import { MenuPageComponent } from "./menu-page/menu-page.component";
+import { AboutPageComponent } from "./about-page/about-page.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/main", pathMatch: "full" },
     { path: "main", component: MenuPageComponent },
-    { path: "plants", component: PlantPageComponent}
+    { path: "plants", component: PlantPageComponent},
+    { path: "about", component: AboutPageComponent}
 
 ];
 
