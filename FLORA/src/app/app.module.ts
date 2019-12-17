@@ -5,6 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { PlantPageComponent } from './plant-page/plant-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -23,7 +24,8 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
     declarations: [
         AppComponent,
         PlantPageComponent,
-        MenuPageComponent
+        MenuPageComponent,
+        AboutPageComponent
     ],
     providers: [],
     schemas: [
