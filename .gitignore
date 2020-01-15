@@ -51,3 +51,6 @@ Backup of *.doc*
 
 # Visio autosave temporary files
 *.~vsd*
+
+#custom
+api-key.ts

@@ -25,5 +25,9 @@ Got Nativescript prototype UI working
 4h work on getting first image from google search
 11/12/2019
 1h Paper
+12/16
+3h Theming
+1/14
+2h Made API Call in Project
 
-37:30 Hours
+42:30 Hours
