@@ -28,4 +28,5 @@ interface Plant{
     TEACH_COLL: string;
     approved: number;
     GEN_SPEC: string;
+    imageUrl: string;
   }

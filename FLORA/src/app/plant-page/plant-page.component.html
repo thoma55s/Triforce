@@ -1,9 +1,9 @@
 <ActionBar title="Local Plants" class="action-bar">
 </ActionBar>
-<ListView [items]="plants" separatorColor="transparent">
+<ListView [items]="goodPlants" separatorColor="transparent">
     <ng-template let-item="item">
         <StackLayout class="image-content-container">
-            <Image [src]="item.ImageUrl"></Image>
+            <Image [src]="item.imageUrl"></Image>
             <Label [text]="item.SPECIES" textTransform="uppercase" style="text-align:center;"></Label>
         </StackLayout>
     </ng-template>
