@@ -5,13 +5,13 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { PlantPageComponent } from './plant-page/plant-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
+<<<<<<< HEAD
 import { PlantDetailPageComponent } from './plant-detail-page/plant-detail-page.component';
+=======
+import { AboutPageComponent } from './about-page/about-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+>>>>>>> master
 
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 @NgModule({
     bootstrap: [
@@ -19,13 +19,18 @@ import { PlantDetailPageComponent } from './plant-detail-page/plant-detail-page.
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
         PlantPageComponent,
         MenuPageComponent,
+<<<<<<< HEAD
         PlantDetailPageComponent
+=======
+        AboutPageComponent
+>>>>>>> master
     ],
     providers: [],
     schemas: [

@@ -1,8 +1,15 @@
-<ListView [items]="plants" separatorColor="transparent">
+<ActionBar title="Local Plants" class="action-bar">
+</ActionBar>
+<ListView [items]="goodPlants" separatorColor="transparent">
     <ng-template let-item="item">
         <StackLayout class="image-content-container">
+<<<<<<< HEAD
             <Image [src]="item.ImageUrl" [nsRouterLink]="['/plantdetail']"></Image>
             <Label [text]="item.Name" textTransform="uppercase" class="text-center"></Label>
+=======
+            <Image [src]="item.imageUrl"></Image>
+            <Label [text]="item.SPECIES" textTransform="uppercase" style="text-align:center;"></Label>
+>>>>>>> master
         </StackLayout>
     </ng-template>
 </ListView>
