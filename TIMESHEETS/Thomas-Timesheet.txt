@@ -29,5 +29,7 @@ Got Nativescript prototype UI working
 3h Theming
 1/14
 2h Made API Call in Project
+1/15 Got Plant Images Loading
+3h
 
-42:30 Hours
+45:30 Hours
