@@ -6,12 +6,8 @@ import { AppComponent } from "./app.component";
 import { PlantPageComponent } from './plant-page/plant-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 @NgModule({
     bootstrap: [
@@ -19,7 +15,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
