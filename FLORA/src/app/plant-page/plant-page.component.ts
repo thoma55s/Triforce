@@ -16,6 +16,7 @@ export class PlantPageComponent {
     test: string;
     plants: Plant[];
     goodPlants: Plant[] = [];
+    apiKey = new ApiKey;
 
     constructor(private http: HttpClient) {
     }
@@ -23,17 +24,15 @@ export class PlantPageComponent {
         this.http.get<Plant[]>(ApiKey.url)
             .subscribe(x => {
                 this.plants = x;
-                const poop = [];
+                const plantBuilder = [];
                 for (let i = 0; i < this.plants.length; i++) {
-                    const y = this.http.get(`https://pixabay.com/api/?key=14917522-60e456a3a9d6cd4eeb3285001&q=${this.plants[i].SPECIES}+${this.plants[i].GENUS}&per_page=3`);
-                    poop.push(y);
+                    const y = this.http.get(this.apiKey.getImageQuery(this.plants[i]));
+                    plantBuilder.push(y);
 
                 }
-                forkJoin(poop).subscribe(y => {
-                    for (let i = 0; i < poop.length; i++) {
+                forkJoin(plantBuilder).subscribe(y => {
+                    for (let i = 0; i < plantBuilder.length; i++) {
                         const res = JSON.parse(JSON.stringify(y[i]));
-                        console.log(res);
-                        console.log('test')
                         if (res.hits) {
                             if (this.plants[i] && res.hits[0]) {
                                 this.plants[i].imageUrl = res.hits[0].largeImageURL;
@@ -42,9 +41,7 @@ export class PlantPageComponent {
                         }
                     }
                 })
-
             });
-
     }
 }
 
