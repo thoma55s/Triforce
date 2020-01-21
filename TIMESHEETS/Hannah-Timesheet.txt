@@ -20,5 +20,7 @@
 11/19/2019
 3h progress meeting
 30 min set up plant-detail-page
+1/16/2020
+3h update plant-detail-page
 
-14.5 Hours
+17.5 Hours

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PlantPageComponent } from '../plant-page/plant-page.component';
+import { PlantsService } from '../plants.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ns-plant-detail-page',
@@ -9,16 +11,16 @@ import { PlantPageComponent } from '../plant-page/plant-page.component';
 export class PlantDetailPageComponent implements OnInit{
 
   currentPlant : Plant
-  constructor() { }
+  species:string;
+  genus:string = "temp";
+
+  constructor(private route: ActivatedRoute, private data: PlantsService) { }
 
   ngOnInit() {
-    
-  }
+    this.data.currentMessage.subscribe(message => this.species = message)
+    //this.data.changeMessage(this.message)
 
-  message:string = "Fail";
-
-  receiveMessage($event) {
-    this.message = $event
+    // this.route.params.subscribe((params) => {this.message = params["name"];})
   }
 
 }

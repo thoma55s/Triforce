@@ -3,13 +3,9 @@
 <ListView [items]="goodPlants" separatorColor="transparent">
     <ng-template let-item="item">
         <StackLayout class="image-content-container">
-<<<<<<< HEAD
-            <Image [src]="item.ImageUrl" [nsRouterLink]="['/plantdetail']"></Image>
-            <Label [text]="item.Name" textTransform="uppercase" class="text-center"></Label>
-=======
-            <Image [src]="item.imageUrl"></Image>
+            <Image [src]="item.imageUrl" [nsRouterLink]="['/plantdetail']"></Image>
+            <!-- <Image [src]="item.imageUrl" (tap)="onTap()"></Image> -->
             <Label [text]="item.SPECIES" textTransform="uppercase" style="text-align:center;"></Label>
->>>>>>> master
         </StackLayout>
     </ng-template>
 </ListView>

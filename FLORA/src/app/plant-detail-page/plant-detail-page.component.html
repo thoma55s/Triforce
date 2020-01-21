@@ -1,8 +1,7 @@
 <!-- <ng-template let-item="item"> -->
     <Stack-Layout>
-        <Button [text]="message" class="btn btn-primary"></Button>
-        <Label text="item.Name" textTransform="uppercase" class="text-center"></Label>
-        <app-child (messageEvent)="receiveMessage($event)"></app-child>
+        <Button text="{{species}}" class="btn btn-primary"></Button>
+        <Label text="{{genus}}" textTransform="uppercase" class="text-center"></Label>
     </Stack-Layout>
     
 <!-- </ng-template> -->
