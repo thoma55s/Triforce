@@ -11,7 +11,7 @@ const routes: Routes = [
     { path: "", redirectTo: "/main", pathMatch: "full" },
     { path: "main", component: MenuPageComponent },
     { path: "plants", component: PlantPageComponent},
-    { path: "plantdetail", component: PlantDetailPageComponent},
+    { path: "plant-detail/:id", component: PlantDetailPageComponent},
     { path: "about", component: AboutPageComponent}
 
 ];

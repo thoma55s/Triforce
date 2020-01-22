@@ -1,7 +1,8 @@
-<!-- <ng-template let-item="item"> -->
-    <Stack-Layout>
-        <Button text="{{species}}" class="btn btn-primary"></Button>
-        <Label text="{{genus}}" textTransform="uppercase" class="text-center"></Label>
-    </Stack-Layout>
-    
-<!-- </ng-template> -->
+<Stack-Layout class="image-content-container">
+    <Image height="300" width="300" [src]="currentPlant.imageUrl"></Image>
+    <Label textWrap="true" text="Scientific Name: {{goodPlant.FAMILY}} {{goodPlant.GENUS}} {{goodPlant.SPECIES}}" textTransform="uppercase" class="text-center" style="text-align:center;"></Label>        <Label text="Common Name: {{goodPlant.C_NAME}}" textTransform="uppercase" style="text-align:center;"></Label>
+    <Label text="Found in {{goodPlant.COUNTY}}, {{goodPlant.STATE}}" textTransform="uppercase" style="text-align:center;"></Label>
+    <Label textWrap="true" text="{{goodPlant.HABITAT}}, {{goodPlant.LOCATION}}" textTransform="uppercase" style="text-align:center;"></Label>
+    <Label text="On {{goodPlant.DATE}}" textTransform="uppercase" style="text-align:center;"></Label>
+    <Label text="Collected by {{goodPlant.COLLECTOR}}" textTransform="uppercase" style="text-align:center;"></Label>
+</Stack-Layout>
