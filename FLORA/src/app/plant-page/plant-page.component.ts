@@ -1,9 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ItemEventData, ListView } from "tns-core-modules/ui/list-view";
+import { PlantDetailPageComponent } from '../plant-detail-page/plant-detail-page.component';
 import { HttpClient } from '@angular/common/http';
 import { ApiKey } from '../shared/api-key';
 import { forkJoin } from 'rxjs';
 import { Observable } from 'tns-core-modules/ui/page/page';
+import { PlantsService } from '../plants.service';
+import {Router} from "@angular/router"
 
 
 @Component({
@@ -11,15 +14,16 @@ import { Observable } from 'tns-core-modules/ui/page/page';
     templateUrl: './plant-page.component.html',
     styleUrls: ['./plant-page.component.css']
 })
-export class PlantPageComponent {
+export class PlantPageComponent implements OnInit{
 
     test: string;
     plants: Plant[];
     goodPlants: Plant[] = [];
+    message: string;
+
+    constructor(private http: HttpClient, private data: PlantsService) {}
     apiKey = new ApiKey;
 
-    constructor(private http: HttpClient) {
-    }
     ngOnInit() {
         this.http.get<Plant[]>(ApiKey.url)
             .subscribe(x => {
@@ -43,6 +47,7 @@ export class PlantPageComponent {
                 })
             });
     }
+
 }
 
 
