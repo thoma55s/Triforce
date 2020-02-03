@@ -21,7 +21,8 @@ export class PlantDetailPageComponent implements OnInit {
   ngOnInit() {
 
     this.id = this.route.snapshot.paramMap.get("id");
-
+    this.currentPlant = {} as Plant;
+    this.goodPlant = {} as Plant;
     this.http.get<Plant[]>(this.apiKey.getPlantbyID(this.id))
       .subscribe(x => {
         this.res = JSON.parse(JSON.stringify(x))
@@ -29,7 +30,6 @@ export class PlantDetailPageComponent implements OnInit {
         this.http.get(this.apiKey.getImageQuery(this.currentPlant)).subscribe(y => {
           const res2 = JSON.parse(JSON.stringify(y));
           this.currentPlant.imageUrl = res2.hits[0].largeImageURL;
-          console.log(this.currentPlant);
           this.goodPlant = this.currentPlant;
         })
       });
