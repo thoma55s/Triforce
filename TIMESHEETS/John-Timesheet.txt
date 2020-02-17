@@ -1,0 +1,100 @@
+9/9/2019
+
+2 hours: Working on Feasibility Repot.
+
+9/10/2019
+
+2 hours: Touching up and reviewing the Report.
+
+9/14/2019
+
+6 hours: Working through Angular tutorial before moving on to NativeScript.
+
+9/16/2019
+
+1 hour: Meeting with Sponsor.
+
+1 hour: Working on Report and powerpoint slides.
+
+9/17/2019
+
+1 hour: Set up google drive for sharing powerpoint work between group.
+
+9/22/2019
+
+4 hours: Working through NativeScript tutorial.
+
+9/26/2019
+
+2 hours: Meeting and working on report.
+
+9/30/2019
+
+2 hours: Creating rough draft for report and ideas for future work, working through minutes.
+
+10/1/2019
+
+1 hour: Working on report.
+
+10/3/2019
+
+2 hours: Architecture meeting and story points for work.
+
+10/15/2019
+
+3 hours: Code Review and Meeting with sponsor.
+
+10/16/2019
+
+1 hour: Working on report.
+
+10/28/2019
+
+1 hour: Testing out google search images.
+
+11/12/2019
+
+1 hour: Working on report.
+
+11/26/2019
+
+3 hours: Reviewing Code and looking for areas for testing.
+
+12/3/2019
+
+2 hours: Researching different apis, mainly for plant information.
+
+12/13/2019
+
+1 hour: Came together to discuss future work and changes.
+
+12/16/2019
+
+5 hours: Adding the about me page and functionality to different pages.
+
+12/29/2019
+
+2 hours: Finsihing up the about me page.
+
+12/30/2019
+
+1 hour: Comunication with IUS Herbarium to get access to the api.
+
+01/07/2020
+
+2 hours: Researching api's one more time to make sure.
+
+01/08/2020
+
+2 hours: Determining what still needs to be done and research it.
+
+01/13/2020
+
+2 hours: Working on api from IUS and trying to find a different api for images.
+
+01/14/2020
+
+5 hours: Meet up to work on more updates.
+
+
+55:00 Hours
