@@ -20,7 +20,7 @@ export class PlantPageComponent implements OnInit{
     plants: Plant[];
     goodPlants: Plant[] = [];
     message: string;
-    page = 0;
+    page: number = 1;
     endReached = false;
     rpp = 50;
 
@@ -29,7 +29,7 @@ export class PlantPageComponent implements OnInit{
 
     ngOnInit() {
 
-        // this.page = this.route.snapshot.paramMap.get("page");
+         //this.page = this.route.snapshot.paramMap.get("page");
            this.http.get<Plant[]>(/*ApiKey.url*/this.apiKey.pagedUrl(this.page))
                .subscribe(x => {
                    this.plants = x;
