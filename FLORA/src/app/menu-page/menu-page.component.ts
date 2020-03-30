@@ -7,6 +7,7 @@ import { Page } from 'tns-core-modules/ui/page/page';
   styleUrls: ['./menu-page.component.css']
 })
 export class MenuPageComponent implements OnInit {
+  page = 1;
 
 
 

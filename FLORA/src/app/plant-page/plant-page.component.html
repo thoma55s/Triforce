@@ -8,5 +8,5 @@
             </StackLayout>
         </ng-template>
     </ListView>
-    <Button text="Next Page" class="-primary" [nsRouterLink]="['/plants']"></Button>
+    <Button text="Next Page" class="-primary" (tap)="newPageMethod()" ></Button>
 </StackLayout>
